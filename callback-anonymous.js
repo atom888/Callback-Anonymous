@@ -6,8 +6,8 @@ var input = [
   { x: 8, y: 15 }
 ];
 var result = input.map(function(values) {
-  var valueX = (values.x * values.x) + (values.y * values.y);
-  return Math.sqrt(valueX);
+  var valueZ = (values.x * values.x) + (values.y * values.y);
+  return Math.sqrt(valueZ);
 });
 
 // console.log(result);
