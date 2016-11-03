@@ -5,8 +5,14 @@ var input = [
   { x: 12, y: 5 },
   { x: 8, y: 15 }
 ];
-var result = input.map(/* Your code here */);
+var result = input.map(function(values) {
+  var valueX = (values.x * values.x) + (values.y * values.y);
+  return Math.sqrt(valueX);
+});
+
+// console.log(result);
 
 console.log(result[0] === 5);
 console.log(result[1] === 13);
 console.log(result[2] === 17);
+
